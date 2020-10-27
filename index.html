@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="a website about films for a school project">
     <meta name="author" content="Arend Kramer">
     <meta name="generator" content="Jekyll v4.1.1">
+    <meta name=”robots” content="index, follow">
+    <link rel="icon" href="./img/tabIcon.png" type="image/gif" sizes="16x16">
     <title>Webdesign · HOME</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
@@ -210,23 +212,10 @@
 
     <footer class="container">
         <p>&copy; Arend Kramer 2020</p>
-        <input type="checkbox" name="" id="switchTheme">
 
 
     </footer>
-    <!--
-     --------------------------------------
-     dark mode switch
-    ---------------------------------------
-    -->
-    <script>
-        const darkSwitch = document.getElementById("darkSwitch");
-        function initTheme() {
-            const e = null !== localStorage.getItem("darkSwitch") && "dark" === localStorage.getItem("darkSwitch");
-            darkSwitch.checked = e, e ? document.body.setAttribute("data-theme", "dark") : document.body.removeAttribute("data-theme")
-        } function resetTheme() { darkSwitch.checked ? (document.body.setAttribute("data-theme", "dark"), localStorage.setItem("darkSwitch", "dark")) : (document.body.removeAttribute("data-theme"), localStorage.removeItem("darkSwitch")) } window.addEventListener("load", () => { darkSwitch && (initTheme(), darkSwitch.addEventListener("change", () => { resetTheme() })) });
-
-    </script>
+ 
     <!--
         -------------------------------
         bootstrap js
@@ -241,6 +230,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
 
     <!--
             ---------------------------

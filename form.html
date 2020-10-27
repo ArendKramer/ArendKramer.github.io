@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="Arend Kramer">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Webdesign · HOME</title>
+    <link rel="icon" href="./img/tabIcon.png" type="image/gif" sizes="16x16">
+    <title>Webdesign · Form</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
@@ -86,33 +87,116 @@
     </nav>
     <main role="main">
         <div class="container">
-            <form>
+            <h2>FILL IN THE FORM TO SUBMIT A NEW FILM</h2>
+            <hr>
+            <form class="was-validated">
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Enter the movie title</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="The movie title..."
+                        required>
+                        <br>
+                        <label for="releseDate">Enter the Release Date</label>
+                    <input type="date" class="form-control" id="releaseDate" placeholder=""
+                        required>
+                        <br>
+                        <label for="language">Enter the movie language</label>
+                    <input type="text" class="form-control" id="language" placeholder="language..."
+                        required>
+                        <br>
+                        <label for="director">Enter the movie director</label>
+                    <input type="text" class="form-control" id="director" placeholder="the directors name..."
+                        required>
+                </div>
                 
             </form>
+            <form>
+                <p>Enter the genre's</p>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">action</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">adventure</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3">animation</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4">comedy</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5">crime</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                    <label class="custom-control-label" for="customCheck6">drama</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                    <label class="custom-control-label" for="customCheck7">fantasy</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck8">
+                    <label class="custom-control-label" for="customCheck8">historical</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck9">
+                    <label class="custom-control-label" for="customCheck9">horror</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck10">
+                    <label class="custom-control-label" for="customCheck10">political</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck11">
+                    <label class="custom-control-label" for="customCheck11">Sci-Fi</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck12">
+                    <label class="custom-control-label" for="customCheck12">thriller</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck13">
+                    <label class="custom-control-label" for="customCheck13">western</label>
+                </div>
+            </form>
+            <form class="was-validated">
+                <label for="description">description</label>
+                <textarea class="form-control" id="description" rows="5" placeholder="please enter a short description..." required></textarea>
+                <p>Enter a film poster</p>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="filmPoster" required>
+                    <label class="custom-file-label" for="filmPoster">Choose file...</label>
+                    <div class="invalid-feedback">Please enter a file</div>
+                </div>
+                <p>Enter a film image (aspect ratio 4:3)</p>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="filmHeader" required>
+                    <label class="custom-file-label" for="filmHeader">Choose file...</label>
+                    <div class="invalid-feedback">Please enter a file</div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Agree to terms and
+                        conditions</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+            <hr>
         </div>
-      
 
     </main>
 
     <footer class="container">
         <p>&copy; Arend Kramer 2020</p>
-        <input type="checkbox" name="" id="switchTheme">
-
-
     </footer>
-    <!--
-     --------------------------------------
-     dark mode switch
-    ---------------------------------------
-    -->
-    <script>
-        const darkSwitch = document.getElementById("darkSwitch");
-        function initTheme() {
-            const e = null !== localStorage.getItem("darkSwitch") && "dark" === localStorage.getItem("darkSwitch");
-            darkSwitch.checked = e, e ? document.body.setAttribute("data-theme", "dark") : document.body.removeAttribute("data-theme")
-        } function resetTheme() { darkSwitch.checked ? (document.body.setAttribute("data-theme", "dark"), localStorage.setItem("darkSwitch", "dark")) : (document.body.removeAttribute("data-theme"), localStorage.removeItem("darkSwitch")) } window.addEventListener("load", () => { darkSwitch && (initTheme(), darkSwitch.addEventListener("change", () => { resetTheme() })) });
-
-    </script>
     <!--
         -------------------------------
         bootstrap js
