@@ -1,0 +1,143 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  body {
+    background-color: #ffffff;
+  }
+  [data-theme="dark"] body {
+    background-color: #ffffff;
+  }
+  
+  .bg-dark {
+    background-color: #6200ee !important;
+  }
+ 
+  nav a {
+    text-decoration: none;
+    color: #bb86fc;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 1px;
+  }
+  .active {
+    text-decoration: underline;
+    text-decoration-color: #bb86fc;
+  }
+  
+  main {
+    /* max-width: 80vw; */
+    margin: 10% 0;
+    grid-column: 2 / 7;
+  }
+  i {
+    color: #eee;
+  }
+  iframe {
+    display: block;
+    margin: auto;
+  }
+  .btn-primary {
+      background-color: #6200ee;
+  }
+  .btn-primary:hover {
+    background-color: #3700b3;
+}
+.btn-primary:visited{
+  background-color: #bb86fc;
+  border: #3700b3;
+}
+.btn-outline-success {
+    color: #03dac6;
+    border-color: #03dac6;
+}
+.btn-outline-success:hover {
+    background-color: #03dac6;
+    color: #000000;
+}
+.btn-secondary{
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+}
+.btn-secondary:hover{
+  background-color: #03dac6;
+  color: #000000;
+}
+.btn-secondary:focus{
+  background-color: #018786;
+}
+.list-group {
+  max-width: 320px;
+  
+}
+
+main i {
+  color: #888888;
+}
+* {box-sizing:border-box}
+
+hr {
+  background-color: #3700b3;
+}
+.detail img {
+  max-width: 300px;
+}
+.media .collapse {
+  margin-top: 5%;
+}
+  
+  form h2 {
+    color: #bb86fc;
+    text-align: center;
+  }
+  
+  article {
+    color: #eee;
+  }
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: block; 
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; 
+  }
+  
+  button {
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 10%;
+    display: inline-block;
+    text-align: center;
+    background-color: #bb86fc;
+  }
+  
+  footer {
+    padding: 5vh;
+    text-align: center;
+    color: #eee;
+    background-color: #1f1f1f;
+  }
+  
